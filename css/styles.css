@@ -8,13 +8,6 @@ https://coolors.co/f7fff7-343434-2f3061-ffe66d-a1c6d7
 #A1C6D7 - blue light
 */
 
-html {
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
 
 /* Global Styles
 --------------------------------------------*/
@@ -78,6 +71,7 @@ h1, h2 {
 header {
     background: #2F3061;
     color: #F7FFF7;
+    text-align: center;
 }
 
 
@@ -136,4 +130,16 @@ header {
 footer {
     background: #343434;
     color: #F7FFF7;
+    text-align: center;
+}
+
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-list a {
+    padding: 15px;
+    display: inline-block;
 }
