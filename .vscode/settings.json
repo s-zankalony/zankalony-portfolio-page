@@ -1,0 +1,26 @@
+{
+  "cSpell.words": [
+    "Gamal",
+    "Tafseer"
+  ],
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#134850",
+    "activityBar.background": "#134850",
+    "activityBar.foreground": "#e7e7e7",
+    "activityBar.inactiveForeground": "#e7e7e799",
+    "activityBarBadge.background": "#000000",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "commandCenter.border": "#e7e7e799",
+    "sash.hoverBorder": "#134850",
+    "statusBar.background": "#092327",
+    "statusBar.foreground": "#e7e7e7",
+    "statusBarItem.hoverBackground": "#134850",
+    "statusBarItem.remoteBackground": "#092327",
+    "statusBarItem.remoteForeground": "#e7e7e7",
+    "titleBar.activeBackground": "#092327",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveBackground": "#09232799",
+    "titleBar.inactiveForeground": "#e7e7e799"
+  },
+  "peacock.remoteColor": "#092327"
+}
