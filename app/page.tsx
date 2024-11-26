@@ -1,4 +1,11 @@
+import Projects from '@/components/Projects';
+import { projects } from '@/utils/projects';
+
 function HomePage() {
-  return <h1 className="text-3xl">HomePage</h1>;
+  return (
+    <>
+      <Projects projects={projects} />
+    </>
+  );
 }
 export default HomePage;

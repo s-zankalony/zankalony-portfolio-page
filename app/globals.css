@@ -67,3 +67,8 @@
     @apply bg-background text-foreground;
   }
 }
+@layer components {
+  .nav-link-style {
+    @apply underline hover:text-muted dark:hover:text-primary;
+  }
+}
