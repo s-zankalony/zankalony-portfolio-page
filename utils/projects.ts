@@ -2,10 +2,11 @@ import tafseerImage from '@/public/images/Tafseer-app.png';
 import weatherAppImage from '@/public/images/weather-app.png';
 import sunsetClock from '@/public/images/sunsetClock.png';
 import { StaticImageData } from 'next/image';
+import { nanoid } from 'nanoid';
 
 export const projects = [
   {
-    id: 1,
+    id: nanoid(),
     title: 'Tafseer Al Quran - by Sheikh YassinRoushdy',
     description:
       'This project is a web application for Tafseer Al-Quran Al-Kareem by Sheikh Yassin Roushdy showing video from dedicated Youtube channel https://www.youtube.com/@HMohamedA. It is built using React and Vite, with Tailwind CSS for styling.',
@@ -14,7 +15,7 @@ export const projects = [
     image: tafseerImage,
   },
   {
-    id: 2,
+    id: nanoid(),
     title: 'Sunset Clock',
     description:
       'This project implements the old Arabic time calculation system which considers sunset is midnight and day starts from there',
@@ -23,7 +24,7 @@ export const projects = [
     image: sunsetClock,
   },
   {
-    id: 3,
+    id: nanoid(),
     title: 'weather-app',
     description:
       'Weather App v2 is a web application providing real-time weather updates using JavaScript, CSS, and HTML. Key features include: Real-time weather data for global locations. Responsive UI with CSS templates. Integration with weather APIs for accurate data.',
@@ -34,7 +35,7 @@ export const projects = [
 ];
 
 export type Project = {
-  id: number;
+  id: string;
   title: string;
   description: string;
   link: string;
