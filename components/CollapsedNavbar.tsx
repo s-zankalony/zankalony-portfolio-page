@@ -3,7 +3,7 @@ import DarkModeToggle from './DarkModeToggle';
 function CollapsedNavbar() {
   return (
     <div
-      className={`bg-[url('@/public/images/navbar-bg-light.jpg')] dark:bg-[url('@/public/images/navbar-bg.jpg')] bg-fixed shadow-md `}
+      className={`bg-[url('/images/navbar-bg-light.jpg')] dark:bg-[url('/images/navbar-bg.jpg')] bg-fixed shadow-md `}
     >
       <div className="full-width px-2 mx-auto py-4 flex justify-between items-center">
         <div className="flex items-center gap-2">

@@ -3,7 +3,7 @@ import SingleJob from './SingleJob';
 
 function WorkExperienceSection() {
   return (
-    <section className="bg-[url('@/public/images/work-experience-light.jpg')] dark:bg-[url('@/public/images/work-experience.jpg')] bg-fixed bg-black/50 bg-blend-overlay mx-auto">
+    <section className="bg-[url('/images/work-experience-light.jpg')] dark:bg-[url('/images/work-experience.jpg')] bg-fixed bg-black/50 bg-blend-overlay mx-auto">
       <h1 className="capitalize font-caveat text-6xl ml-8 mb-8 text-slate-50">
         work experience
       </h1>

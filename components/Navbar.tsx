@@ -20,7 +20,7 @@ function Navbar() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-40 bg-[url('@/public/images/navbar-bg-light.jpg')] dark:bg-[url('@/public/images/navbar-bg.jpg')] bg-fixed transition-all duration-300 ease-in-out ${
+        className={`fixed top-0 left-0 right-0 z-40 bg-[url('/images/navbar-bg-light.jpg')] dark:bg-[url('/images/navbar-bg.jpg')] bg-fixed transition-all duration-300 ease-in-out ${
           isCollapsed ? 'opacity-0' : 'opacity-100'
         }`}
       >
