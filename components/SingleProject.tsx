@@ -26,6 +26,8 @@ function SingleProject({ project }: { project: Project }) {
               className="h-full w-full object-cover object-center"
               src={image.src}
               alt={`${title} project screenshot`}
+              width={200}
+              height={200}
             />
           </div>
           <div className="flex flex-col items-start space-y-4 py-4 lg:col-span-8">
