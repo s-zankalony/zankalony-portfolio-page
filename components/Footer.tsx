@@ -10,7 +10,7 @@ function Footer() {
     <footer className="bg-slate-800 text-background dark:bg-background dark:text-foreground">
       <div className="max-w-100 w-[85%] mx-auto py-4 md:text-center">
         <h2 className="font-caveat font-normal text-5xl mb-8 text-center">
-          Let's Keep in Touch!
+          Let&apos;s Keep in Touch!
         </h2>
 
         {/* <!-- Social media and contact links. Add or remove any networks. --> */}

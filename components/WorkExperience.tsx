@@ -1,4 +1,4 @@
-import { workExperience, WorkExperience } from '@/utils/work';
+import { workExperience } from '@/utils/work';
 import SingleJob from './SingleJob';
 
 function WorkExperienceSection() {

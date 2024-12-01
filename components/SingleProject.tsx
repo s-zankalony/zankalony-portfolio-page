@@ -7,6 +7,7 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
+import Image from 'next/image';
 
 function SingleProject({ project }: { project: Project }) {
   const { id, title, description, link, gitHub, image } = project;
@@ -21,7 +22,7 @@ function SingleProject({ project }: { project: Project }) {
         </CardHeader>
         <CardContent className="flex flex-col md:flex-row gap-8 items-center md:items-start">
           <div className="w-full max-w-72 overflow-hidden rounded-lg shadow-lg transition-transform duration-300 hover:scale-102 lg:col-span-4">
-            <img
+            <Image
               className="h-full w-full object-cover object-center"
               src={image.src}
               alt={`${title} project screenshot`}

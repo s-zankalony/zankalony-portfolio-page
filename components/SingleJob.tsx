@@ -1,7 +1,7 @@
 import type { WorkExperience } from '@/utils/work';
 
 function SingleJob({ job }: { job: WorkExperience }) {
-  const { id, title, company, date, duration, details } = job;
+  const { title, company, date, duration, details } = job;
   return (
     <section className="m-8 gap-6 px-16 py-6 md:grid md:grid-cols-12 md:gap-5">
       <div className="job-details col-span-4">

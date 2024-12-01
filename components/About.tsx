@@ -12,9 +12,9 @@ function About() {
         className="rounded-full mx-auto block mb-4"
       />
       <p className="font-montserrat text-sm">
-        Hi there, I'm a Full Stack developer, I'm specialized in Front-end
-        development & back-end development. I've made some projects, you can
-        check them below.
+        Hi there, I&apos;m a Full Stack developer, I&apos;m specialized in
+        Front-end development & back-end development. I&apos;ve made some
+        projects, you can check them below.
       </p>
       <Link
         href="/Sameh_El_Zankalony_Full_Stack_Developer.pdf"
