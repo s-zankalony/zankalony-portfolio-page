@@ -4,6 +4,7 @@ import './globals.css';
 import Navbar from '@/components/Navbar';
 import { ThemeProvider } from '@/components/theme-provider';
 import Providers from '@/components/ui/Providers';
+import DarkModeToggle from '@/components/DarkModeToggle';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -34,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${caveat.variable} antialiased bg-zinc-900`}
+        className={`${geistSans.variable} ${geistMono.variable} ${caveat.variable} antialiased bg-zinc-900 pt-[500px]`}
         suppressHydrationWarning
       >
         <Providers>

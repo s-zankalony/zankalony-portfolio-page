@@ -1,15 +1,29 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 function About() {
   return (
-    <p className="font-montserrat text-sm">
-      Hi there, I'm a Full Stack developer, I'm specialized in Front-end
-      development & back-end development. I've made some great projects, you can
-      check them in the following link{' '}
-      <Link href="#project-1" className="nav-link-style">
-        zankalony.com/projects/
+    <>
+      <Image
+        src={`/images/IMG_0556.jpg`}
+        width={100}
+        height={100}
+        alt="avatar"
+        className="rounded-full mx-auto block mb-4"
+      />
+      <p className="font-montserrat text-sm">
+        Hi there, I'm a Full Stack developer, I'm specialized in Front-end
+        development & back-end development. I've made some projects, you can
+        check them below.
+      </p>
+      <Link
+        href="/Sameh_El_Zankalony_Full_Stack_Developer.pdf"
+        className="nav-link-style"
+        target="_blank"
+      >
+        grab a copy of my CV
       </Link>
-    </p>
+    </>
   );
 }
 export default About;

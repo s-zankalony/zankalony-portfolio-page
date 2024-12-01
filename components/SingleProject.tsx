@@ -14,12 +14,12 @@ function SingleProject({ project }: { project: Project }) {
     <>
       <Card
         key={id}
-        className="m-8 gap-6 p-4 bg-white/30 backdrop-blur-sm hover:bg-white/40 transition-all duration-300"
+        className="m-8 gap-6 p-4 bg-white/40 backdrop-blur-sm hover:bg-white/50 transition-all duration-300"
       >
-        <CardHeader className="text-2xl font-bold tracking-tight sm:text-3xl mb-4">
+        <CardHeader className="text-2xl font-bold tracking-tight sm:text-3xl mb-4 items-center md:items-start">
           <CardTitle>{title}</CardTitle>
         </CardHeader>
-        <CardContent className="flex flex-row gap-8 items-start">
+        <CardContent className="flex flex-col md:flex-row gap-8 items-center md:items-start">
           <div className="w-full max-w-72 overflow-hidden rounded-lg shadow-lg transition-transform duration-300 hover:scale-102 lg:col-span-4">
             <img
               className="h-full w-full object-cover object-center"
