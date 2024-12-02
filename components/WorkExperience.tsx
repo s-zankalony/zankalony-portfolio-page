@@ -7,7 +7,7 @@ function WorkExperienceSection() {
       <h1 className="capitalize font-caveat text-6xl ml-8 mb-8 text-slate-50">
         work experience
       </h1>
-      <div className="bg-white/40 backdrop-blur-sm hover:bg-white/50 transition-all duration-300">
+      <div className="bg-white/40 backdrop-blur-sm hover:bg-white/50 dark:bg-black/40 dark:hover:bg-black/50 transition-all duration-300">
         {workExperience.map((job) => {
           return <SingleJob key={job.id} job={job} />;
         })}

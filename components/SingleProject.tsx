@@ -15,7 +15,7 @@ function SingleProject({ project }: { project: Project }) {
     <>
       <Card
         key={id}
-        className="m-8 gap-6 p-4 bg-white/40 backdrop-blur-sm hover:bg-white/50 transition-all duration-300"
+        className="m-8 gap-6 p-4 bg-white/40 backdrop-blur-sm hover:bg-white/50 dark:bg-black/40 dark:hover:bg-black/50 transition-all duration-300"
       >
         <CardHeader className="text-2xl font-bold tracking-tight sm:text-3xl mb-4 items-center md:items-start">
           <CardTitle>{title}</CardTitle>
