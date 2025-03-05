@@ -1,10 +1,20 @@
 import tafseerImage from '@/public/images/Tafseer-app.png';
 import weatherAppImage from '@/public/images/weather-app.png';
 import sunsetClock from '@/public/images/sunsetClock.png';
+import aquaTrail from '@/public/images/aqua-trail-shipping-img.png';
 import { StaticImageData } from 'next/image';
 import { nanoid } from 'nanoid';
 
 export const projects = [
+  {
+    id: nanoid(),
+    title: 'Aqua Trail Shipping Company',
+    description:
+      'This project is a web application for shipping company demonstrating user registration & Seafreight booking feature, using Next.js Postgresql via Prisma/Subabase',
+    link: 'https://aqua-trail-shipping.vercel.app/',
+    gitHub: 'https://github.com/s-zankalony/aqua-trail-shipping.git',
+    image: aquaTrail,
+  },
   {
     id: nanoid(),
     title: 'Tafseer Al Quran - by Sheikh YassinRoushdy',
