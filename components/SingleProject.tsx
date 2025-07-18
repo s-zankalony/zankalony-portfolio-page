@@ -11,7 +11,7 @@ import Image from 'next/image';
 import { ExternalLink, Github } from 'lucide-react';
 
 function SingleProject({ project }: { project: Project }) {
-  const { id, title, description, link, gitHub, image } = project;
+  const { title, description, link, gitHub, image } = project;
   return (
     <Card className="group h-full overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-300 bg-white dark:bg-gray-800">
       <div className="relative overflow-hidden">

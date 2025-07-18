@@ -9,11 +9,11 @@ function Footer() {
       <div className="container mx-auto px-4 py-16">
         <div className="text-center mb-12">
           <h2 className="text-4xl lg:text-5xl font-caveat font-bold mb-4">
-            Let's Connect!
+            Let&apos;s Connect!
           </h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Ready to collaborate on your next project? Let's get in touch and
-            create something amazing together.
+            Ready to collaborate on your next project? Let&apos;s get in touch
+            and create something amazing together.
           </p>
         </div>
 
