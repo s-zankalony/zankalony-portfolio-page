@@ -8,62 +8,60 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 import Image from 'next/image';
+import { ExternalLink, Github } from 'lucide-react';
 
 function SingleProject({ project }: { project: Project }) {
   const { id, title, description, link, gitHub, image } = project;
   return (
-    <>
-      <Card
-        key={id}
-        className="m-8 gap-6 p-4 bg-white/40 backdrop-blur-sm hover:bg-white/50 dark:bg-black/40 dark:hover:bg-black/50 transition-all duration-300"
-      >
-        <CardHeader className="text-2xl font-bold tracking-tight sm:text-3xl mb-4 items-center md:items-start">
-          <CardTitle>{title}</CardTitle>
-        </CardHeader>
-        <CardContent className="flex flex-col md:flex-row gap-8 items-center md:items-start">
-          <div className="w-full max-w-72 overflow-hidden rounded-lg shadow-lg transition-transform duration-300 hover:scale-102 lg:col-span-4">
-            <Image
-              className="h-full w-full object-cover object-center"
-              src={image.src}
-              alt={`${title} project screenshot`}
-              width={200}
-              height={200}
-            />
-          </div>
-          <div className="flex flex-col items-start space-y-4 py-4 lg:col-span-8">
-            <p className="text-base leading-relaxed sm:text-lg mb-8">
-              {description}
-            </p>
-          </div>
-        </CardContent>
-        <CardFooter className="flex justify-center">
-          <Button
-            variant="default"
-            size="default"
-            className="p-2 m-2 cursor-pointer"
+    <Card className="group h-full overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-300 bg-white dark:bg-gray-800">
+      <div className="relative overflow-hidden">
+        <Image
+          className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+          src={image.src}
+          alt={`${title} project screenshot`}
+          width={400}
+          height={300}
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+      </div>
+
+      <CardHeader>
+        <CardTitle className="text-xl font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+          {title}
+        </CardTitle>
+      </CardHeader>
+
+      <CardContent className="flex-1">
+        <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+          {description}
+        </p>
+      </CardContent>
+
+      <CardFooter className="flex gap-3 pt-0">
+        <Button asChild className="flex-1 bg-blue-600 hover:bg-blue-700">
+          <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2"
           >
-            <a
-              href={link}
-              className="items-center rounded-md px-6 py-3 text-base font-semibold transition-all duration-300"
-            >
-              View Project
-            </a>
-          </Button>
-          <Button
-            variant="outline"
-            size="default"
-            className="p-2 m-2 cursor-pointer"
+            <ExternalLink size={16} />
+            Live Demo
+          </a>
+        </Button>
+        <Button asChild variant="outline" className="flex-1">
+          <a
+            href={gitHub}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2"
           >
-            <a
-              href={gitHub}
-              className="items-center rounded-md px-6 py-3 text-base font-semibold transition-all duration-300"
-            >
-              Github Link
-            </a>
-          </Button>
-        </CardFooter>
-      </Card>
-    </>
+            <Github size={16} />
+            Source Code
+          </a>
+        </Button>
+      </CardFooter>
+    </Card>
   );
 }
 

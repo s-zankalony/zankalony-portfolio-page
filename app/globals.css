@@ -66,9 +66,29 @@
   body {
     @apply bg-background text-foreground;
   }
+  html {
+    scroll-behavior: smooth;
+  }
 }
+
 @layer components {
   .nav-link-style {
     @apply underline hover:text-muted dark:hover:text-primary;
+  }
+
+  .container {
+    @apply max-w-7xl mx-auto px-4;
+  }
+
+  .section-heading {
+    @apply text-4xl lg:text-5xl font-caveat font-bold text-center mb-16;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent;
   }
 }

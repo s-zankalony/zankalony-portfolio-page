@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${caveat.variable} antialiased bg-zinc-900 pt-[500px]`}
+        className={`${geistSans.variable} ${geistMono.variable} ${caveat.variable} antialiased`}
         suppressHydrationWarning
       >
         <Providers>

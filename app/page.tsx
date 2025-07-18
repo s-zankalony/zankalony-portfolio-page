@@ -6,12 +6,12 @@ import { projects } from '@/utils/projects';
 
 function HomePage() {
   return (
-    <>
+    <main className="min-h-screen">
       <Projects projects={projects} />
       <WorkExperienceSection />
       <Education />
       <Footer />
-    </>
+    </main>
   );
 }
 export default HomePage;

@@ -3,12 +3,23 @@ import { education } from '@/utils/education';
 
 function Education() {
   return (
-    <section className="bg-[url('/images/joanna-kosinska-unsplash.jpg')] bg-fixed bg-top pb-24 dark:bg-black/70 dark:bg-blend-overlay">
-      <div className="max-w-[800px] w-[85%] mx-auto py-16">
-        <h2 className="font-caveat font-normal text-6xl mb-8">Education</h2>
-        {education.map((cert) => {
-          return <Certificate key={cert.id} cert={cert} />;
-        })}
+    <section id="education" className="py-20 bg-white dark:bg-gray-900">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl lg:text-5xl font-caveat font-bold text-gray-900 dark:text-white mb-4">
+            Education & Certifications
+          </h2>
+          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+            Continuous learning and professional development in technology and
+            business
+          </p>
+        </div>
+
+        <div className="max-w-4xl mx-auto space-y-6">
+          {education.map((cert) => (
+            <Certificate key={cert.id} cert={cert} />
+          ))}
+        </div>
       </div>
     </section>
   );

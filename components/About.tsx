@@ -1,29 +1,23 @@
 import Image from 'next/image';
-import Link from 'next/link';
 
 function About() {
   return (
-    <>
-      <Image
-        src={`/images/IMG_0556.jpg`}
-        width={100}
-        height={100}
-        alt="avatar"
-        className="rounded-full mx-auto block mb-4"
-      />
-      <p className="font-montserrat text-sm">
-        Hi there, I&apos;m a Full Stack developer, I&apos;m specialized in
-        Front-end development & back-end development. I&apos;ve made some
-        projects, you can check them below.
-      </p>
-      <Link
-        href="/Sameh_El_Zankalony_Full_Stack_Developer.pdf"
-        className="nav-link-style"
-        target="_blank"
-      >
-        grab a copy of my CV
-      </Link>
-    </>
+    <div className="flex flex-col items-center space-y-6">
+      <div className="relative">
+        <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-white shadow-2xl">
+          <Image
+            src="/images/IMG_0556.jpg"
+            width={320}
+            height={320}
+            alt="Sameh El Zankalony - Full Stack Developer"
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="absolute -bottom-4 -right-4 w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center shadow-lg">
+          <span className="text-white text-2xl">👋</span>
+        </div>
+      </div>
+    </div>
   );
 }
 export default About;
