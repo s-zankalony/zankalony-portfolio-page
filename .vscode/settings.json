@@ -1,7 +1,11 @@
 {
+<<<<<<< HEAD
   "cSpell.words": [
     "Gamal",
     "Tafseer"
   ],
+=======
+  "cSpell.words": ["Gamal", "Seafreight", "Subabase", "Tafseer"],
+>>>>>>> 6ef614e44b8d9c843f3fc685d9b03df9b7490201
   "peacock.remoteColor": "#092327"
 }
