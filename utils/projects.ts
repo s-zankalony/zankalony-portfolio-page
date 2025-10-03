@@ -11,7 +11,7 @@ export const projects = [
     title: 'Aqua Trail Shipping Company',
     description:
       'This project is a web application for shipping company demonstrating user registration & Seafreight booking feature, using Next.js Postgresql via Prisma/Subabase',
-    link: 'https://aqua-trail-shipping.vercel.app/',
+    link: 'https://aqua-trail-shipping.netlify.app/',
     gitHub: 'https://github.com/s-zankalony/aqua-trail-shipping.git',
     image: aquaTrail,
   },
